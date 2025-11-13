@@ -147,7 +147,7 @@ plt.title('Q1: Clustering Médio vs. Probabilidade (p) em Redes ER')
 plt.xlabel('Probabilidade de Conexão (p)')
 plt.ylabel('Clustering Médio')
 plt.grid(True, linestyle='--', alpha=0.6)
-plt.savefig('q1_er_clustering.png')
+plt.savefig('graficos/q1_er_clustering.png')
 print("   (Plot salvo como 'q1_er_clustering.png')")
 
 
@@ -177,7 +177,7 @@ plt.xlabel('Parâmetro "m" (conexões do novo nó)')
 plt.ylabel('Assortatividade')
 plt.axhline(0, color='red', linestyle='--', label='Neutro (Assort. = 0)')
 plt.legend()
-plt.savefig('q2_ba_assortativity.png')
+plt.savefig('graficos/q2_ba_assortativity.png')
 print("   (Plot salvo como 'q2_ba_assortativity.png')")
 
 
@@ -210,7 +210,7 @@ plt.xlabel('Probabilidade de Rewiring (p) (Eixo X não está em escala log)')
 plt.ylabel('Métrica Normalizada (0 a 1)')
 plt.legend(['Clustering Médio', 'Caminho Médio'])
 plt.grid(True, linestyle='--', alpha=0.6)
-plt.savefig('q3_ws_smallworld.png')
+plt.savefig('graficos/q3_ws_smallworld.png')
 print("   (Plot salvo como 'q3_ws_smallworld.png')")
 
 
@@ -237,7 +237,7 @@ sns.boxplot(data=df_plot, x='tipo_grafo', y='clustering_medio', hue='tipo_grafo'
 plt.title('Distribuição Geral: Coeficiente de Clustering Médio')
 plt.xlabel('Modelo de Grafo (Configuração Típica)')
 plt.ylabel('Clustering Médio')
-plt.savefig('geral_dist_clustering.png')
+plt.savefig('graficos/geral_dist_clustering.png')
 print("Plot de distribuição do Clustering salvo.")
 
 # Plot 2: Distribuição da Assortatividade
@@ -248,7 +248,7 @@ plt.xlabel('Modelo de Grafo (Configuração Típica)')
 plt.ylabel('Assortatividade')
 plt.axhline(0, color='red', linestyle='--', label='Neutro')
 plt.legend()
-plt.savefig('geral_dist_assortativity.png')
+plt.savefig('graficos/geral_dist_assortativity.png')
 print("Plot de distribuição da Assortatividade salvo.")
 
 print("\n--- Análise Concluída! ---")
