@@ -19,25 +19,24 @@ print(f"Número de Arestas (E): {G.number_of_edges()}")
 # 2. VISUALIZAÇÃO (PLOT)
 # =============================================================================
 print("Gerando a visualização...")
-print("O código para gerar a visualiazação está comentado para evitar lentidão.")
 
-# plt.figure(figsize=(120, 120)) # Tamanho grande para ver detalhes
+plt.figure(figsize=(120, 120)) # Tamanho grande para ver detalhes
 
-# # spring_layout tenta separar os nós para mostrar a estrutura
-# # k controla a distância entre nós (k maior = mais espaçado)
-# pos = nx.spring_layout(G, k=0.15, iterations=20, seed=42)
+# spring_layout tenta separar os nós para mostrar a estrutura
+# k controla a distância entre nós (k maior = mais espaçado)
+pos = nx.spring_layout(G, k=0.15, iterations=20, seed=42)
 
-# nx.draw(G, pos, 
-#         node_size=15,           # Nós pequenos para não poluir
-#         node_color="blue",      # Cor dos nós
-#         edge_color="gray",      # Cor das arestas
-#         alpha=0.5,              # Transparência (ajuda a ver densidade)
-#         with_labels=False,      # Sem números (ficaria ilegível)
-#         width=0.5)              # Arestas finas
+nx.draw(G, pos, 
+        node_size=15,           # Nós pequenos para não poluir
+        node_color="blue",      # Cor dos nós
+        edge_color="gray",      # Cor das arestas
+        alpha=0.5,              # Transparência (ajuda a ver densidade)
+        with_labels=False,      # Sem números (ficaria ilegível)
+        width=0.5)              # Arestas finas
 
-# plt.title("Visualização da Rede: socfb-nips-ego")
-# plt.savefig("graficos/meu_grafo_real.png") # Salva em arquivo
-# print("Gráfico salvo como 'meu_grafo_real.png'")
+plt.title("Visualização da Rede: socfb-nips-ego")
+plt.savefig("graficos/meu_grafo_real.png") # Salva em arquivo
+print("Gráfico salvo como 'meu_grafo_real.png'")
 
 # =============================================================================
 # 3. ANÁLISE RÁPIDA (APLICANDO O QUE APRENDEMOS)
