@@ -114,7 +114,8 @@ df_results = pd.DataFrame(results_list)
 
 end_time = time.time()
 print(f"Geração e extração concluídas em {end_time - start_time:.2f} segundos.")
-print(df_results.head())
+print("Salvo em csv/resultados_grafos.csv")
+df_results.to_csv('csv/resultados_grafos.csv')
 
 # =============================================================================
 # ETAPA 4: ANÁLISE (QUESTÕES DE PESQUISA)
@@ -252,3 +253,4 @@ plt.savefig('graficos/geral_dist_assortativity.png')
 print("Plot de distribuição da Assortatividade salvo.")
 
 print("\n--- Análise Concluída! ---")
+# ff
