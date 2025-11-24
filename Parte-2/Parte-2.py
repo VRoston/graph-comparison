@@ -9,7 +9,7 @@ print("Carregando o arquivo...")
 
 # create_using=nx.Graph() garante que seja não-direcionado (simétrico)
 # nodetype=int converte os IDs dos nós para números inteiros
-G = nx.read_edgelist('socfb-nips-ego.edges', comments='%', nodetype=int, create_using=nx.Graph())
+G = nx.read_edgelist('Parte-2/socfb-nips-ego.edges', comments='%', nodetype=int, create_using=nx.Graph())
 
 print(f"Sucesso! Grafo carregado.")
 print(f"Número de Nós (N): {G.number_of_nodes()}")
@@ -35,7 +35,7 @@ nx.draw(G, pos,
         width=0.5)              # Arestas finas
 
 plt.title("Visualização da Rede: socfb-nips-ego")
-plt.savefig("graficos/meu_grafo_real.png") # Salva em arquivo
+plt.savefig("Parte-1/graficos/meu_grafo_real.png") # Salva em arquivo
 print("Gráfico salvo como 'meu_grafo_real.png'")
 
 # =============================================================================
